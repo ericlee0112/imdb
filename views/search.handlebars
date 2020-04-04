@@ -1,0 +1,8 @@
+<h3>Search Movie</h3>
+{{#if error}}<span>{{error}}</span>{{/if}}
+<form class="form-inline" action="/movie/search" method="post">
+    <div>
+        <input type="text" name="id" class="form-control" placeholder="Search Movie By Id">
+    </div>
+    <input type="submit" value="Search" class="btn btn-primary" style="margin-left: 5px">
+</form>

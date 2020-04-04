@@ -1,0 +1,30 @@
+<h3>Add Movie</h3>
+{{#if error}}<span>{{error}}</span>{{/if}}
+<form action="/movie/add" method="post">
+    <div style="margin-top: 5px">
+        <label for="id">ID</label>
+        <input type="text" name="id" class="form-control" placeholder="Movie ID">
+    </div>
+    <div style="margin-top: 5px">
+        <label for="movieName">Movie Name</label>
+        <input type="text" name="movieName" class="form-control" placeholder="Movie Name">
+    </div>
+    <div style="margin-top: 5px">
+        <label for="director">Director</label>
+        <input type="text" name="director" class="form-control" placeholder="Director">
+    </div>
+    <div style="margin-top: 5px">
+        <label for="yearOfRelease">Year of Release</label>
+        <input type="text" name="yearOfRelease" class="form-control" placeholder="Year of Release">
+    </div>
+    <div style="margin-top: 5px">
+        <label for="imdbLink">IMDB Link</label>
+        <input type="text" name="imdbLink" class="form-control" placeholder="IMDB Link">
+    </div>
+     <div style="margin-top: 5px">
+        <label for="myRating">My Rating</label>
+        <input type="text" name="myRating" class="form-control" placeholder="My Rating">
+    </div>
+    <br>
+    <input type="submit" value="Add Movie" class="btn btn-primary" style="margin-left: 5px">
+</form>

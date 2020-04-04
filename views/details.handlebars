@@ -1,0 +1,12 @@
+
+<h1>{{ movie.movieName }} {{ movie.yearOfRelease }} [{{ movie.id }}]</h1>
+<ul class="list-group">
+    <li class="list-group-item"><strong>Director: </strong>{{ movie.director }}</li>
+    <li class="list-group-item"><strong>IMDB Link: </strong>{{ movie.imdbLink }}</li>
+    <li class="list-group-item"><strong>My Rating: </strong>{{ movie.myRating }}</li>
+</ul>
+<br>
+<a class="btn btn-primary" href="/">Back</a>
+<form action="/movie/delete/{{movie.id}}?_method=DELETE" method="post">
+    <input type="submit" value="Delete" class="btn btn-danger float-right">
+</form>
